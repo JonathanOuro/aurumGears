@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina inicial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="menu-header">
+    <div id="retangulo"></div>
+    <input type="checkbox" id="check">
+    <div>
+      <a id="link-logo" href="index.html">
+        <img src="/JavaScript/WebsiteTestes/imagens/logo.JPG" id="logo1">
+      </a>
+    </div>
+    <label class="label1" for="check">
+        <img src="imagens/Menu.png" alt="">
+    </label>
+    <nav>
+        <ul class="navbar-nav"> 
+            <li><b>Selecione o que deseja</b></li>
+            <li class="my-0" class="nav-item"><a href="ecdr.html" class="nav-link" id="link-sidebar">Engrenagem cilíndrica de dentes retos</a></li>
+            <li class="my-0" class="nav-item"><a href="" class="nav-link" id="link-sidebar">Sobre o projeto</a></li>
+            <li class="my-0" class="nav-item"><a href="" class="nav-link" id="link-sidebar">Ajuda</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div id="conteudo">
+        <section id="secao1"> 
+            <h1 class="logo2">AurumGears</h1>
+            <h2 id="txt">Dimensione engrenagens para seu projeto e gere folhas de processos de fabricação. </h2>
+            <img id="Exemplo1" src="imagens/Exemplo para tela inicial c.png" alt="">
+            <div class="container">
+                <!-- Button to Open the Modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                INICIAR AGORA
+                </button>
+              
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                  <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content">
+                    
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">SELECIONE O QUE DESEJA</h4>
+                        <button type="button" id="botão1" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body" class="list-group list-group-flush">
+                        <ul class="navbar-nav"> 
+                          <li class="my-0" class="nav-item"><a href="ecdr.html" class="nav-link" id="link-modal">Engrenagem cilíndrica de dentes retos</a></li>
+                          <li class="my-0" class="nav-item"><a href="" class="nav-link" id="link-modal">Sobre o projeto</a></li>
+                          <li class="my-0" class="nav-item"><a href="" class="nav-link" id="link-modal">Ajuda</a></li>
+                      </ul>
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div  class="modal-footer">
+                        <button type="button" id="botão2" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+        </section>
+        <section id="secao2">
+              <h1 id="titulo-secao2">Projete e produza engrenagens</h1>
+              <h2 class="sub-titulo" id="sub-titulo-gear">ENGRENAGENS</h2>
+              <h2 class="sub-titulo" id="sub-titulo-sheet">FOLHAS DE PROCESSOS</h2>
+              <img id="print" src="imagens/print.svg" alt="">
+              <img id="gear" src="imagens/gear.svg" alt="">
+              <h3 id="sub-sub1">Cilíndricas de dentes retos e helicoidais. </h3>
+              <h3 id="sub-sub2">Gere folhas de processos de fabricação por usinagem.</h3>
+        </section>
+        <section id="secao3">
+            <img src="imagens/Exemplo 2 tela inicial 1.png" id="exemplo-2" alt="">
+            <h1 id="titulo-secao3">Economize seu tempo, ele é precioso. </h1>
+            <h2 id="txt-j">Dimensione sua engrenagem a partir das necessidades de seu projeto e gere folhas de processos para fabrica-la, tudo isso em instantes.</h2>
+            <button type="button" class="btn btn-primary" data-toggle="modal" id="botão3" data-target="#myModal">
+              INICIAR AGORA
+            </button>
+        </section>
+        <div class="footer">
+          <div class="teste1">
+            <p class="pfooter">Website desenvolvido por: Jonathan do Ouro</p>
+            <p class="pfooter">Orientado por: Mariana Arduini</p>
+            <p class="pfooter">Email: ourojonathan@gmail.com</p>
+          </div>
+          <div class="teste2">
+            <h1 class="">AurumGears</h1>
+            <p class="pfooter2">Trabalho de conclusão do curso técnico em mecânica </br> da escola Técnica Estadual Bento Quirino.</p>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

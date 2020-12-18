@@ -1,0 +1,943 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: Montserrat;
+    width: 1345px;
+    text-decoration: none;
+}
+
+header{
+    width: 1345px;
+}
+
+ul{
+    list-style: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+#menu{
+    position: absolute;
+    width: 53px;
+    height: 53px;
+}
+
+nav{
+    position: absolute;
+    width: 300px;
+    height: 589px;
+    left: -347px;
+    top: 50px;
+    background: #000000;
+    transition: all .5s;
+    z-index: 1;
+}
+
+#link-sidebar{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    display: block;
+    align-items: center;
+    color: #f5f5f5;
+    height: 70px;
+    padding: 10px 10px;
+}
+
+
+b{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 27px;
+    display: block;
+    align-items: center;
+    color: #FFFEFE;
+    background: #BD3D3D;
+    padding: 10px 5px;
+}
+#link-sidebar:hover{
+    background-color: rgb(247, 144, 130);
+    color: rgb(0, 0, 0);
+}
+
+
+.label1{
+    position: absolute;
+    width: 53px;
+    height: 40px;
+    left: 10px;
+    top: 0px;
+}
+
+input#check[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(347px);
+}
+
+
+#retangulo{
+    height: 50px;
+    background: #e68787;
+    opacity: 0.2;
+    width: 1345px;
+}
+
+#link-logo{
+    position: absolute;
+    width: 210px;
+    height: 41px;
+    left: 74px;
+    top: 7px;   
+}
+
+#logo1{
+    position: absolute;
+    width: 210px;
+    height: 41px;
+    top: 0px;
+    left: 0px;
+}
+
+#introdução{
+    width: 100%;
+    height: 85px;
+}
+
+#ecdr-logo{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 20px;
+    float: left;
+}
+
+#tipo-engrenagem-txt{
+    position: relative;
+    float: left;
+    top: 22px;
+    left: 23px;
+    font-size: 15px;
+    background-color: #000000;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 12px;
+    text-align: left;
+    color: white;
+}
+
+#guia-txt{
+    position: relative;
+    top: 29px;
+    left: 25px;
+    width: 430px;
+    height: 34px;
+    float: left;
+}
+h2{
+    font-size: 14px;
+}
+
+#form{
+    height: 360px;
+}
+#dados-projeto{
+    width: 600px;
+    float: left;
+    position: relative;
+    left: 50px;
+    top: 20px;
+    width: 561px;
+    height: 302px;
+    background: #CECECE;
+    border-radius: 4px;
+}
+#h2-2{
+    width: 561px;
+    font-size: 24px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+.linha{
+    height: 30px;
+    padding-top: 10px;
+}
+
+.rotulo{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    width: 290px;
+    position: relative;
+    left: 10px;
+}
+
+.input-form{
+    background: #a39f9f;
+    width: 225px;
+    height: 24px;
+    border-radius: 2px;
+    position: relative;
+    right: 5px;
+    left: 20px;
+    text-decoration: none;
+    text-align: right;
+    font-weight: bold;
+    box-shadow : none;  
+    
+}
+
+form{
+    float: right;
+    position: relative;
+    left: -42px;
+    top: 1.3px;
+}
+
+option{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+h5{
+    background: #a39f9f;
+    width: 225px;
+    height: 24px;
+    border-radius: 2px;
+    position: relative;
+    right: 5px;
+    left: -22px;
+    text-decoration: none;
+    float: right;
+    text-align: right;
+    
+}
+
+#dados{
+    float: right;
+    position: relative;
+    right: 50px;
+    top: 20px;
+    height: 300px;
+}
+
+#material-div{
+    position: relative;
+    width: 410px;
+    height: 130px;
+    border-radius: 4px;
+    background: #CECECE;
+    top: 10px;
+}
+
+.rotulo-2{
+    width: 192px;
+    height: 22px;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    top: 0px;
+    left: 4px;
+}
+
+#material{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#form-2{
+    position: relative;
+    float: right;
+    left: -10px;
+    top: -32.5px;
+}
+
+#dureza{
+    position: relative;
+    float: right;
+    left: -10px;
+    top: -7px;
+}
+
+.linha2{
+    padding: 0px 0px;
+    height: 26px;
+}
+
+#motor{
+    position: relative;
+    width: 410px;
+    height: 130px;
+    border-radius: 4px;
+    background: #CECECE;
+    top: 43px;
+}
+
+#potencia{
+    position: relative;
+    left: 20px;
+    background: #a39f9f;
+    width: 225px;
+    height: 24px;
+    border-radius: 2px;
+}
+
+.rotulo-3{
+    width: 150px;
+    height: 22px;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    top: 0px;
+    left: 4px;
+}
+
+.rotulo-4{
+    width: 100px;
+    height: 22px;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    top: 28px;
+    left: 4px;
+}
+
+.linha3{
+    padding: 0px 0px;
+}
+
+#tipo-motor{
+    position: relative;
+    float: right;
+    left: 30px;
+    border-radius: 4px;
+}
+
+#submit-area{
+    position: relative;
+    height: 70px;
+}
+
+#button-submit{
+    background: #4861BA;
+    border-radius: 4px;
+    width: 1245px;
+    height: 52px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    align-items: center;
+    position: relative;
+    left: 48px;
+}
+#button-submit:hover{
+    color: rgb(255, 255, 255);
+    background: #3956be;
+}
+
+#resultados{
+    height: 355px;
+    width: 600px;
+    float: left;
+    position: relative;
+    left: 50px;
+    top: 20px;
+    width: 561px;
+    background: #CECECE;
+    border-radius: 4px;
+    /*display: none;*/
+}
+
+.line{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.text-resultado{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+    width: 300px;
+    height: 25px;
+    margin: 0px;
+    position: relative;
+    left: 10px;
+}
+
+.valor-resultado{
+    position: relative;
+    right: 20px;
+    float: right;
+    width: 225px;
+    height: 25px;
+    background: #837e7e;
+    margin: 0px;
+    text-align: center;
+    color: rgb(240, 235, 235)
+}
+
+#resultados-a{
+    height: 355px;
+    width: 600px;
+    float: right;
+    position: relative;
+    left: -55px;
+    top: 20px;
+    width: 561px;
+    background: #CECECE;
+    border-radius: 4px;
+    /*display: none;*/
+}
+
+#h2-3{
+    width: 561px;
+    font-size: 24px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+}
+
+.line1{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    margin-top: 20px;
+}
+
+#redimensionar{
+    display: none;
+}
+
+.redimensionar-estilo{
+    width: 561px;
+    font-size: 20px;
+    color: black;
+    background-color: brown;
+    position: relative;
+    top: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.botão{
+    background: #1E1C1C;
+    color: white;
+    margin-top: 5px;
+    position: relative;
+    left: 12px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border-color: black;
+    width: 220px;
+}
+
+em{
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+#button-redim:hover{
+    background-color: white;
+    color: black;
+}
+
+h3{
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: left;
+    color: rgb(43, 42, 42);
+    margin-left: 3px;
+    text-align: justify;
+    font-weight: bolder;
+}
+
+#seção-resultados{
+    height: 450px;
+    display: none;
+}
+
+.paragrafo{
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: left;
+    margin-left: 3px;
+    text-align: justify;
+    font-weight: bolder;
+}
+
+#aprovado{
+    display: none;
+    color: rgb(43, 42, 42);
+}
+
+#reprovado{
+    display: none;
+    color: rgb(255, 0, 0);
+}
+
+#caracteristicas-geometricas{
+    height: 1100px;
+    display: none;
+}
+
+#div-titulo{
+    height: 40px;
+    background-color: black;
+    width: 1245px;
+    border-radius: 4px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+#h2-4{
+    text-align: center;
+    font-size: 20px;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 0px;
+    position: relative;
+    top: 6.5px;
+}
+
+#area-desenho{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 700px;
+    height: 1000px;
+    margin-right: 0px;
+}
+
+#desenho-caracteristicas-par{
+    height: 500px;
+    width: 700px;
+    border: solid;
+    margin-bottom: 10px;
+}
+#desenho-caracteristicas-geral{
+    height: 425px;
+    width: 700px;
+    border: solid;
+}
+
+.center{
+    text-align: center;
+}
+
+aside{
+    float: right;
+    position: relative;
+    top: -950px;
+    left: -20px;
+    width: 550px;
+    height: 920px;
+    background-color: rgb(255, 255, 255);
+}
+
+td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 10px;
+    width: 200px;
+}
+
+tr:hover{
+    background-color: rgb(192, 192, 192);
+}
+
+#mostrar-caracteristicas{
+    position: relative;
+    height: 70px;
+    margin-top: 10px;
+    top: 400px;
+    float: inherit;
+}
+
+#button-submit2{
+    position: relative;
+    margin-top: 5px;
+    width: 560px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+#button-submit2:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#botãoFolhas{
+    position: relative;
+    float: right;
+    left: 530px;
+    top: -64px;
+    width: 549px;
+    height: 50px;
+    background-color: rgb(106, 154, 241);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+#botãoFolhas:hover{
+    color: rgb(0, 0, 0);
+}
+
+#folhas-processos{
+    position: absolute;
+    height: 3200px;
+    width: 1200px;
+    background-color: #ffffff;
+    left: 63px;
+    display: none;
+    border-top: solid;
+}
+
+#folha01{
+    position: relative;
+    top: 20px;
+    left: 100px;
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+#folha02 {
+    position: relative;
+    top: 40px;
+    left: 100px;
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+#folha03 {
+    position: relative;
+    top: 60px;
+    left: 100px;
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+#folha04 {
+    position: relative;
+    top: 80px;
+    left: 100px;
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+#folha05 {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+#folha06 {
+    position: relative;
+    top: 120px;
+    left: 100px;
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+
+.logo{
+    float: left;
+    position: relative;
+    margin: 0;
+    background-color: rgb(206, 206, 206);
+    left: 0px;
+    top: 0px;
+    width: 200px;
+    height: 130px;
+    border-right: solid;
+    border-bottom: solid;
+    border-top: solid;
+    border-left: solid;
+    border-width: 1px;
+}
+
+.logo2{
+    position: relative;
+    margin: 0;
+    width: 75px;
+    margin: 0;
+    top: 47px;
+    left: 15px;
+    font-size: 30px;
+    color: black;
+}
+
+.informações{
+    float: left;
+    position: relative;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    left: 0px;
+    top: 0px;
+    width: 390px;
+    height: 130px;
+    
+    border-bottom: solid;
+    border-top: solid;
+    border-width: 1px;
+}
+
+.linha4{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    width: 390px;
+    height: 31.8px;
+    text-align: left;
+    border-bottom: solid;
+    border-width: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.p1{
+    margin: 0;
+    position: relative;
+    top: 6px;
+    margin-left: 3px;
+}
+.p2{
+    margin: 0;
+    position: relative;
+    top: -3px;
+    text-align: center;
+    height: 18.5px;
+}
+
+.p3{
+    margin: 0;
+    position: relative;
+    top: 0px;
+    left: 5px;
+    text-align: left;
+}
+
+.p4{
+    margin: 0;
+    position: relative;
+    top: 3.5px;
+    text-align: center;
+}
+
+.p5{
+    margin: 0px 0px;
+    position: relative;
+    top: 1px;
+    text-align: center;
+}
+
+.p6{
+    margin: 0px 0px;
+    position: relative;
+    top: 7px;
+    left: 5px;
+    text-align: left;
+}
+
+.maquina-ferramenta{
+    float: right;
+    position: relative;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    left: -2px;
+    top: 0px;
+    width: 408px;
+    height: 130px;
+    border-bottom: solid;
+    border-right: solid;
+    border-left: solid;
+    border-top: solid;
+    border-width: 1px;
+}
+
+.linha5{
+    margin: 0;
+    background-color: rgb(110, 110, 110);
+    width: 408px;
+    height: 18.5px;
+    text-align: left;
+    border-bottom: solid;
+    border-width: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.conteudo-maquina{
+    margin: 0;
+    background-color: rgb(206, 206, 206);
+    width: 408px;
+    height: 45px;
+    text-align: left;
+    border-bottom: solid;
+    border-width: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.conteudo-ferramenta{
+    margin: 0;
+    background-color: rgb(206, 206, 206);
+    width: 408px;
+    height: 46px;
+    text-align: left;
+    
+    border-width: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.draw-area{
+    float: left;
+    position: absolute;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    left: 0px;
+    top: 130px;
+    width: 590px;
+    height: 470px;
+    
+    border-bottom: solid;
+    border-left: solid;
+    border-width: 1px;
+}
+
+.linha6{
+    margin: 0;
+    background-color: rgb(110, 110, 110);
+    width: 590px;
+    height: 25px;
+    text-align: left;
+    border-bottom: solid;
+    border-width: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.desenho2{
+    margin: 0px 0px;
+    position: relative;
+    left: 40px;
+}
+
+.desenho3{
+    margin: 0px 0px;
+    position: relative;
+    left: 15px;
+    top: 90px;
+}
+
+.desenho4{
+    margin: 0px 0px;
+    position: relative;
+    left: 30px;
+    top: 55px;
+}
+
+.desenho5{
+    margin: 0px 0px;
+    position: relative;
+    left: 30px;
+}
+.descriçao-parametros{
+    float: right;
+    position: relative;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    left: -2px;
+    top: 0px;
+    width: 408px;
+    height: 470px;
+    border-right: solid;
+    border-bottom: solid;
+    border-left: solid;
+    border-width: 1px;
+}
+
+.linha7{
+    margin: 0;
+    background-color: rgb(110, 110, 110);
+    width: 408px;
+    height: 25px;
+    text-align: left;
+    border-bottom: solid;
+    border-width: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.linha8{
+    margin: 0;
+    background-color: rgb(110, 110, 110);
+    width: 408px;
+    height: 25px;
+    text-align: left;
+    border-bottom: solid;
+    border-top: solid;
+    border-width: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.descrição{
+    height: 235px;
+}
+
+.parametros{
+    height: 235px;
+}
+
+.conteudo-descrição, .conteudo-parametros{
+    background-color: rgb(206, 206, 206);
+    top: 0px;
+    height: 209px;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+}
+

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="principal">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engrenagem cilíndrica de dentes retos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="ECDR.css">
+</head>
+<body>
+    <header>
+        <div id="retangulo"></div>
+        <label class="label1" for="check">
+            <img src="imagens/Menu.png" id="menu">
+        </label>
+        <input type="checkbox" id="check">
+        <div>
+            <a id="link-logo" href="index.html">
+            <img src="imagens/logo.JPG" id="logo1">
+            </a>
+        </div>
+        <nav>
+        <ul class="navbar-nav"> 
+            <li><b>Selecione o que deseja</b></li>
+            <li class="my-0" class="nav-item"><a href="ecdr.html" class="nav-link" id="link-sidebar">Engrenagem cilíndrica de dentes retos</a></li>
+            <li class="my-0" class="nav-item"><a href="" class="nav-link" id="link-sidebar">Sobre o projeto</a></li>
+            <li class="my-0" class="nav-item"><a href="" class="nav-link" id="link-sidebar">Ajuda</a></li>
+        </ul>
+        </nav>
+    </header> <!--Orientações sobre o dimensionamento escolhido-->
+    <div id="introdução">
+        <img id="ecdr-logo"src="imagens/ecdr-logo.svg" alt="Engrenagem">
+        <div id="tipo-engrenagem-txt">
+            <h1>Engrenagem cilíndrica de dentes retos</h1>
+        </div>
+        <div id="guia-txt">
+            <h2>O dimensionamento a seguir é utilizado para pinhões com ângulo de pressão α=20° e número de dentes entre 18 e 40</h2>
+        </div>
+    </div>
+    <div id="form"> <!--Dados do projeto - inputs com dados-->
+        <div id="dados-projeto">
+            <h2 id="h2-2">DADOS DO PROJETO DA ENGRENAGEM</h2>
+            <div class="linha">
+                <label class="rotulo"for="n-dentes-p">Número de dentes do pinhão</label>
+                <input type="number" placeholder="Campo Obrigatório" name="" class="input-form" id="n-dentes-p">
+            </div>
+            <div class="linha">
+                <label class="rotulo" for="n-dentes-c">Número de dentes da coroa</label>
+                <input type="number" name="" placeholder="Campo Obrigatório" required class="input-form" id="n-dentes-c">
+            </div>
+            <div class="linha">
+                <label class="rotulo" for="Aplicação">Aplicação da transmissão</label>
+                <form name="aplicação">
+                      <select name="carga" class="input-form">       
+                            <optgroup label="Eixos de transmissão">                 
+                                <option value="1">Cargas uniformes</option>
+                                <option value="1.25">Cargas pesadas</option>  
+                            </optgroup>       
+                            <optgroup label="Bombas">
+                                <option value="1">Centrifugas</option>
+                                <option value="1">Rotativas de engrenagens</option>
+                                <option value="1.25">Dupla multicilíndricas</option>
+                            </optgroup>  
+                            <optgroup label="Indústria Metalúrgica">
+                                <option value="1.25">Cortadores de chapa</option>
+                                <option value="1.25">Embobinadeiras</option>
+                                <option value="1.75">Viradeiras</option>
+                            </optgroup>        
+                            <optgroup label="Máquinas operatrizes">
+                                <option value="1.75">Acionamento principal - cargas pesadas</option>
+                                <option value="1.25">Acionamento principal - cargas uniformes</option>
+                                <option value="1">Acionamento auxiliar</option>
+                                <option value="1.75">Prensas</option>
+                            </optgroup>     
+                            <optgroup label="Pontes rolantes">
+                                <option value="1.75">Acionamento do carro e da ponte</option>
+                                <option value="1">Acionamento do guincho</option>
+                            </optgroup>
+                      </select>
+                  </form>
+            </div>
+            <div class="linha">
+                <label class="rotulo"for="operacao-diaria">Operação diária [Horas]</label>
+                <input type="number" placeholder="Campo Obrigatório" name="" class="input-form" id="operacao-diaria">
+            </div>
+            <div class="linha">
+                <label class="rotulo"for="duracao-prevista">Duração prevista do par [Horas]</label>
+                <input type="number" placeholder="Campo Obrigatório" name="" class="input-form" id="duracao-prevista">
+            </div>
+            <div class="linha">
+                <label class="rotulo"for="largura-diametro">Relação largura-diâmetro</label>
+                <input type="number" placeholder="Campo Obrigatório" name="" class="input-form" id="largura-diametro">
+            </div>
+            <div class="linha" name="engrenagem">
+                <label class="rotulo" for="Apoio">Apoio da engrenagem</label>
+                <select class="input-form" name="apoio" id="Apoio">
+                    <option id="bi-apoiada" value="1.2">Bi-apoiada</option>
+                    <option id="balanço" value="0.75">Em balanço</option>
+                </select>
+            </div>
+            <div class="linha">
+                <label class="rotulo">Ângulo de pressão </label>
+                <h5>20°</h5>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        <div id="dados"> <!--dados relacionados ao material-->
+            <div id="material-div">
+                <h2 id="h2-2">MATERIAL</h2>
+                <div class="linha" id="linha-material">
+                    <label class="rotulo-2"for="material">Selecione o material</label>
+                    <form name="material" id="form-2">
+                        <select name="tipo" id="material" autofocus="true" class="input-form">
+                            <option value="40">Ferro fundido cinzento</option>
+                            <option value="80">Ferro fundido nodular</option>
+                            <option value="90">SAE 1010/1020</option>
+                            <option value="120">SAE 1040/1050</option>
+                            <option value="170">SAE 4320/4340</option>
+                            <option value="200">SAE 8620/8640</option>
+                        </select>
+                    </form>                  
+                </div>
+                <div class="linha2">
+                    <label class="rotulo-4"for="dureza">Dureza [HB]</label>
+                    <input type="number" placeholder="Campo Obrigatório" name="" class="input-form" id="dureza">
+                </div>
+            </div>
+            <div id="motor"> <!--dados do motor-->
+                <h2 id="h2-2">MOTOR E EIXO</h2>
+                <div class="linha3" title="Potência do motor">
+                    <label class="rotulo-3"for="potencia">Potência [KW]</label>
+                    <input type="number" placeholder="Campo Obrigatório" name=""  class="input-form"  id="potencia">
+                </div>
+                <div class="linha3" title="Rotação do eixo, se a engrenagem estiver acoplada direto no motor é a rotação do motor">
+                    <label class="rotulo-3"for="rpm">Rotação [RPM]</label>
+                    <input type="number" placeholder="Campo Obrigatório" name="" class="input-form" id="rpm">
+                </div>
+                <div class="linha3">
+                    <label class="rotulo-3" for="tipo-motor">Tipo de motor</label>
+                    <form  form name="tipomotor" id="form-3">
+                        <select name="motor" id="tipo-motor" class="input-form">
+                            <option value="40">Elétrico</option>
+                            <option value="80">Combustão</option>
+                        </select>
+                    </form> 
+                </div>
+            </div>
+        </div>
+
+    </div> <!--botão para enviar as informações e retornar os resultados-->
+    <div id="submit-area">
+        <input type="button" onclick="receberDados()"  id="button-submit" value="Confirmar dados e obter resultados">
+    </div>
+    <section id="seção-resultados">
+        <div id="resultados"> <!--Parte que mostra os resultados do dimensionamento-->
+            <h2 id="h2-2">Resultados auxiliares</h2>
+            <div class="line">
+                <label class="text-resultado">Relação de transmissão</label>
+                <h4 class="valor-resultado"></h4>
+            </div>
+            <div class="line">
+                <label class="text-resultado">Fator de durabilidade</label>
+                <h4 class="valor-resultado"></h4>
+            </div>
+            <div class="line">
+                <label class="text-resultado">Pressão admissível</label>
+                <h4 class="valor-resultado"></h4>
+            </div>
+            <div class="line">
+                <label class="text-resultado">Fator de serviço AGMA</label>
+                <h4 class="valor-resultado"></h4>
+            </div>
+            <div class="line">
+                <label class="text-resultado">Torque do pinhão</label>
+                <h4 class="valor-resultado"></h4>
+            </div>
+            <div class="line">
+                <label class="text-resultado">Tensão admissível</label>
+                <h4 class="valor-resultado"></h4>
+            </div>
+            <div class="line">
+                <label class="text-resultado">Fator de forma q</label>
+                <h4 class="valor-resultado"></h4>
+            </div>
+            <div class="line">
+                <label class="text-resultado">Força tangencial</label>
+                <h4 class="valor-resultado"></h4>
+            </div>
+            <div class="line">
+                <label class="text-resultado">Força radial</label>
+                <h4 class="valor-resultado"></h4>
+            </div>
+        </div>
+        <div id="resultados-a">
+            <h2 id="h2-2">Resultados</h2>
+            <div class="line">
+                <label class="text-resultado">Volume mínimo</label>
+                <h4 class="valor-resultado"></h4>
+            </div>
+            <div class="line">
+                <label class="text-resultado">Diâmetro primitivo normalizado</label>
+                <h4 class="valor-resultado" id="f" ></h4>
+            </div>
+            <div class="line">
+                <label class="text-resultado">Módulo normalizado</label>
+                <h4 class="valor-resultado"></h4>
+            </div>
+            <div class="line">
+                <label class="text-resultado">Largura do pinhão</label>
+                <h4 class="valor-resultado"></h4>
+            </div>
+            <div class="line">
+                <label class="text-resultado">Tensão máxima no pé do dente</label>
+                <h4 class="valor-resultado"></h4>
+            </div>
+            <h2 id="h2-3">Análise</h2>
+            <div class="line1">
+                <label class="text-resultado">Suporta os esforços?</label>
+                <h4 class="valor-resultado"></h4>
+                <div id="redimensionar"> <!--Area para redimensionar o pinhão (se necessário)-->
+                    <h3>A tensão atuante no pé do dente é maior que a tensão admissível, portanto redimensionamos a largura para o pinhão suportar a carga </h3>
+                    <p id="aprovado" class="paragrafo">PINHÃO APROVADO</p>
+                    <p id="reprovado" class="paragrafo">PINHÃO REPROVADO [Alterar material]</p>
+                </div>
+                <input type="button" id="button-submit2"  value="Mostrar características geométricas">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="caracteristicas-geometricas">
+        <div id="div-titulo">
+            <h2 id="h2-4">CARACTERÍSTICAS GEOMÉTRICAS DO PAR DE ENGRENAGENS</h2>
+        </div>
+        <div id="area-desenho">
+            <img id="desenho-caracteristicas-par" src="imagens/pinhaoEcoroaCortado.png" alt="">
+            <img id="desenho-caracteristicas-geral" src="imagens/PinhãoDesenhoCortado.png" alt="">
+        </div>
+        <aside>
+            <table id="table">
+                <tr>
+                    <th>Formulário</th>
+                    <th>Pinhão</th>
+                    <th>Coroa</th>
+                </tr>
+                <tr>
+                    <td>Diâmetro primitivo [d<sub>0</sub>]</td>
+                    <td>d<sub>01</sub> = </td>
+                    <td>d<sub>02</sub> = </td>
+                </tr>
+                <tr>
+                    <td>Diâmetro de base [dg<sub></sub>]</td>
+                    <td>d<sub>g1</sub> = </td>
+                    <td>d<sub>g2</sub> = </td>
+                </tr>
+                <tr>
+                    <td>Diâmetro interno [d<sub>f</sub>]</td>
+                    <td>d<sub>f1</sub> = </td>
+                    <td>d<sub>f2</sub> = </td>
+                </tr>
+                <tr>
+                    <td>Diâmetro externo [d<sub>k</sub>]</td>
+                    <td>d<sub>k1</sub> = </td>
+                    <td>d<sub>k2</sub> = </td>
+                </tr>
+                <tr>
+                    <td>Distância entre centros [A]</td>
+                    <td colspan="2">A = </td>
+                </tr>
+                <tr>
+                    <td>Passo das engrenagens [t<sub>0</sub>]</td>
+                    <td colspan="2">t<sub>0</sub> = </td>
+                </tr>
+                <tr>
+                    <td>Vão entre os dentes no primitivo [l<sub>0</sub>]</td>
+                    <td colspan="2">l<sub>0</sub> = </td>
+                </tr>
+                <tr>
+                    <td>Altura da cabeça do dente [h<sub>k</sub>]</td>
+                    <td colspan="2">h<sub>k</sub> = </td>
+                </tr>
+                <tr>
+                    <td>Altura do pé do dente [h<sub>f</sub>]</td>
+                    <td colspan="2">h<sub>f</sub> = </td>
+                </tr>
+                <tr>
+                    <td >Altura comum do dente [h<sub></sub>]</td>
+                    <td colspan="2">h<sub></sub> = </td>
+                </tr>
+                <tr>
+                    <td>Altura total do dente [h<sub>z</sub>]</td>
+                    <td colspan="2">h<sub>z</sub> = </td>
+                </tr>
+                <tr>
+                    <td>Espessura do dente no primitivo [s<sub>0</sub>]</td>
+                    <td colspan="2">s<sub>0</sub> = </td>
+                </tr>
+                <tr>
+                    <td>Folga da cabeça [s<sub>k</sub>]</td>
+                    <td colspan="2">s<sub>k</sub> = </td>
+                </tr>
+            </table>
+        </aside>
+        <input type="button" id="botãoFolhas" onclick="gerarFolhas()" value="GERAR FOLHAS DE PROCESSOS DE FABRICAÇÃO">
+    </section>
+    <section id="folhas-processos">
+        <!------------------------------------FOlha 0 ------------------------------>
+        <section id="folha01" style="display: none;">
+            <section id="top">
+                <div class="logo">
+                    <h1 class="logo2">AurumGears</h1>
+                </div>
+                <div class="informações">
+                    <div class="linha4" style="background-color: gray;">
+                        <p class="p1">Folha de processo: 01</p>
+                    </div>
+                    <div class="linha4" style="background-color: rgb(206, 206, 206);">
+                        <p class="p1">Produto: Pinhão do par de engrenagem</p>
+                    </div>
+                    <div class="linha4" style="background-color: gray;">
+                        <p class="p1">Operação: Corte de matéria-prima</p>
+                    </div> 
+                    <div id="material1" style="height: 32.3px;  font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgb(206, 206, 206);">
+                        <j class="p1" class="text-material">Material do produto: </j>
+                    </div>
+                </div>
+                <div class="maquina-ferramenta">
+                    <div class="maquina">
+                        <div class="linha5">
+                            <p class="p2">EQUIPAMENTO</p>
+                        </div>
+                        <div class="conteudo-maquina">
+                            <p class="p3">Serra fita horizontal para barras maciças</p>
+                        </div>
+                    </div>
+                    <div class="ferramenta">
+                        <div class="linha5">
+                            <p class="p2">FERRAMENTAL</p>
+                        </div>
+                        <div class="conteudo-ferramenta">
+                            <p class="p3">Serra</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="draw-area">
+                    <div class="linha6">
+                        <p class="p4">REPRESENTAÇÃO GRÁFICA</p>
+                    </div>
+                   
+                </div>
+                <aside class="descriçao-parametros">
+                    <div class="descrição">
+                        <div class="linha7">
+                            <p class="p5">Descrição da Operação</p>
+                        </div>
+                        <div class="conteudo-descrição">
+                            <p class="p6" id="text-operação"></p>
+                        </div>
+                    </div>
+                    <div class="parametros">
+                        <div class="linha7">
+                            <p class="p5">Parâmetros de processo</p>
+                        </div>
+                        <div class="conteudo-parametros" id="text-parametros">
+                            <p class="p6"></p>
+                            <p class="p6"></p> 
+                            <p class="p6"></p>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </section>
+        <!--------------------------------------FOLHA 01------------------------------------>
+        <section id="folha02">
+            <section id="top">
+                <div class="logo">
+                    <h1 class="logo2">AurumGears</h1>
+                </div>
+                <div class="informações">
+                    <div class="linha4" style="background-color: gray;">
+                        <p class="p1">Folha de processo: 01</p>
+                    </div>
+                    <div class="linha4" style="background-color: rgb(206, 206, 206);">
+                        <p class="p1">Produto: Pinhão do par de engrenagem</p>
+                    </div>
+                    <div class="linha4" style="background-color: gray;">
+                        <p class="p1">Operação: Faceamento do blank</p>
+                    </div> 
+                    <div id="material1" style="height: 32.3px;  font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgb(206, 206, 206);">
+                        <j class="p1" class="text-material">Material do produto: </j>
+                    </div>
+                </div>
+                <div class="maquina-ferramenta">
+                    <div class="maquina">
+                        <div class="linha5">
+                            <p class="p2">EQUIPAMENTO</p>
+                        </div>
+                        <div class="conteudo-maquina">
+                            <p class="p3">Torno mecânico de alto desempenho</p>
+                        </div>
+                    </div>
+                    <div class="ferramenta">
+                        <div class="linha5">
+                            <p class="p2">FERRAMENTAL</p>
+                        </div>
+                        <div class="conteudo-ferramenta">
+                            <p class="p3">Pastilha T-Max® P | ISO - CNMG 12 04 12-PM 4425 | Sandvik | classe P e K |</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="draw-area">
+                    <div class="linha6">
+                        <p class="p4">REPRESENTAÇÃO GRÁFICA</p>
+                    </div>
+                    <img src="/JavaScript/WebsiteTestes/imagens/faceamento.PNG" alt="">
+                </div>
+                <aside class="descriçao-parametros">
+                    <div class="descrição">
+                        <div class="linha7">
+                            <p class="p5">Descrição da Operação</p>
+                        </div>
+                        <div class="conteudo-descrição">
+                            <p class="p6" id="text-operação"></p>
+                        </div>
+                    </div>
+                    <div class="parametros">
+                        <div class="linha7">
+                            <p class="p5">Parâmetros de processo</p>
+                        </div>
+                        <div class="conteudo-parametros" id="text-parametros">
+                            <p class="p6"></p>
+                            <p class="p6"></p> 
+                            <p class="p6"></p>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </section>
+        <!-----------------------------------------folha 02--------------------------->
+        <section id="folha03">
+            <section id="top">
+                <div class="logo">
+                    <h1 class="logo2">AurumGears</h1>
+                </div>
+                <div class="informações">
+                    <div class="linha4" style="background-color: gray;">
+                        <p class="p1">Folha de processo: 02</p>
+                    </div>
+                    <div class="linha4" style="background-color: rgb(206, 206, 206);">
+                        <p class="p1">Produto: Pinhão do par de engrenagem</p>
+                    </div>
+                    <div class="linha4" style="background-color: gray;">
+                        <p class="p1">Operação: Usinagem do diâmetro externo</p>
+                    </div> 
+                    <div id="material1" style="height: 32.3px;  font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgb(206, 206, 206);">
+                        <j class="p1" class="text-material">Material do produto: </j>
+                    </div>
+                </div>
+                <div class="maquina-ferramenta">
+                    <div class="maquina">
+                        <div class="linha5">
+                            <p class="p2">EQUIPAMENTO</p>
+                        </div>
+                        <div class="conteudo-maquina">
+                            <p class="p3">Torno mecânico de alto desempenho</p>
+                        </div>
+                    </div>
+                    <div class="ferramenta">
+                        <div class="linha5">
+                            <p class="p2">FERRAMENTAL</p>
+                        </div>
+                        <div class="conteudo-ferramenta">
+                            <p class="p3">Pastilha T-Max® P | ISO - CNMG 12 04 12-PM 4425 | Sandvik | classe P e K |</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="draw-area">
+                    <div class="linha6">
+                        <p class="p4">REPRESENTAÇÃO GRÁFICA</p>
+                    </div>
+                    <img src="/JavaScript/WebsiteTestes/imagens/diametro.png" class="desenho2" alt="">
+                </div>
+                <aside class="descriçao-parametros">
+                    <div class="descrição">
+                        <div class="linha7">
+                            <p class="p5">Descrição da Operação</p>
+                        </div>
+                        <div class="conteudo-descrição">
+                            <p class="p6" id="text-operação"></p>
+                        </div>
+                    </div>
+                    <div class="parametros">
+                        <div class="linha7">
+                            <p class="p5">Parâmetros de processo</p>
+                        </div>
+                        <div class="conteudo-parametros" id="text-parametros">
+                            <p class="p6"></p>
+                            <p class="p6"></p> 
+                            <p class="p6"></p>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </section>
+        <!-----------------------------------------folha 03---------------------------->
+        <section id="folha04">
+            <section id="top">
+                <div class="logo">
+                    <h1 class="logo2">AurumGears</h1>
+                </div>
+                <div class="informações">
+                    <div class="linha4" style="background-color: gray;">
+                        <p class="p1">Folha de processo: 03</p>
+                    </div>
+                    <div class="linha4" style="background-color: rgb(206, 206, 206);">
+                        <p class="p1">Produto: Pinhão do par de engrenagem</p>
+                    </div>
+                    <div class="linha4" style="background-color: gray;">
+                        <p class="p1">Operação: Furo central para o cubo</p>
+                    </div> 
+                    <div id="material1" style="height: 32.3px;  font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgb(206, 206, 206);">
+                        <j class="p1" class="text-material">Material do produto: </j>
+                    </div>
+                </div>
+                <div class="maquina-ferramenta">
+                    <div class="maquina">
+                        <div class="linha5">
+                            <p class="p2">EQUIPAMENTO</p>
+                        </div>
+                        <div class="conteudo-maquina">
+                            <p class="p3">Torno mecânico universal</p>
+                        </div>
+                    </div>
+                    <div class="ferramenta">
+                        <div class="linha5">
+                            <p class="p2">FERRAMENTAL</p>
+                        </div>
+                        <div class="conteudo-ferramenta">
+                            <p class="p3">Brocas para torno | material: HSS | ultima broca com ø para encaixar no eixo |</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="draw-area">
+                    <div class="linha6">
+                        <p class="p4">REPRESENTAÇÃO GRÁFICA</p>
+                    </div>
+                    <img src="/JavaScript/WebsiteTestes/imagens/furo.png" class="desenho3" alt="">
+                </div>
+                <aside class="descriçao-parametros">
+                    <div class="descrição">
+                        <div class="linha7">
+                            <p class="p5">Descrição da Operação</p>
+                        </div>
+                        <div class="conteudo-descrição">
+                            <p class="p6" id="text-operação">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="parametros">
+                        <div class="linha7">
+                            <p class="p5">Parâmetros de processo</p>
+                        </div>
+                        <div class="conteudo-parametros" id="text-parametros">
+                            <p class="p6"></p>
+                            <p class="p6"></p> 
+                            <p class="p6"></p>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </section>
+        <!-----------------------------------------folha 04---------------------------->
+        <section id="folha05">
+            <section id="top">
+                <div class="logo">
+                    <h1 class="logo2">AurumGears</h1>
+                </div>
+                <div class="informações">
+                    <div class="linha4" style="background-color: gray;">
+                        <p class="p1">Folha de processo: 04</p>
+                    </div>
+                    <div class="linha4" style="background-color: rgb(206, 206, 206);">
+                        <p class="p1">Produto: Pinhão do par de engrenagem</p>
+                    </div>
+                    <div class="linha4" style="background-color: gray;">
+                        <p class="p1">Operação: Corte do blank</p>
+                    </div> 
+                    <div id="material1" style="height: 32.3px;  font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgb(206, 206, 206);">
+                        <j class="p1" class="text-material">Material do produto: </j>
+                    </div>
+                </div>
+                <div class="maquina-ferramenta">
+                    <div class="maquina">
+                        <div class="linha5">
+                            <p class="p2">EQUIPAMENTO</p>
+                        </div>
+                        <div class="conteudo-maquina">
+                            <p class="p3">Torno mecânico de alto desempenho</p>
+                        </div>
+                    </div>
+                    <div class="ferramenta">
+                        <div class="linha5">
+                            <p class="p2">FERRAMENTAL</p>
+                        </div>
+                        <div class="conteudo-ferramenta">
+                            <p class="p3">Pastilha CoroCut® QD | ISO - QD-NG-0300-RM 1125 | Sandvik | classes P, M, K, N e S |</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="draw-area">
+                    <div class="linha6">
+                        <p class="p4">REPRESENTAÇÃO GRÁFICA</p>
+                    </div>
+                    <img src="/JavaScript/WebsiteTestes/imagens/corte.png" class="desenho4" alt="">
+                </div>
+                <aside class="descriçao-parametros">
+                    <div class="descrição">
+                        <div class="linha7">
+                            <p class="p5">Descrição da Operação</p>
+                        </div>
+                        <div class="conteudo-descrição">
+                            <p class="p6" id="text-operação">
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="parametros">
+                        <div class="linha7">
+                            <p class="p5">Parâmetros de processo</p>
+                        </div>
+                        <div class="conteudo-parametros" id="text-parametros">
+                            <p class="p6"></p>
+                            <p class="p6"></p> 
+                            <p class="p6"></p>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </section>
+        <!-----------------------------------FOLHA 05------------------------------------->
+        <section id="folha06">
+            <section id="top">
+                <div class="logo">
+                    <h1 class="logo2">AurumGears</h1>
+                </div>
+                <div class="informações">
+                    <div class="linha4" style="background-color: gray;">
+                        <p class="p1">Folha de processo: 05</p>
+                    </div>
+                    <div class="linha4" style="background-color: rgb(206, 206, 206);">
+                        <p class="p1">Produto: Pinhão do par de engrenagem</p>
+                    </div>
+                    <div class="linha4" style="background-color: gray;">
+                        <p class="p1">Operação: Fresar os dentes da engrenagem</p>
+                    </div> 
+                    <div id="material1" style="height: 32.3px;  font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgb(206, 206, 206);">
+                        <j class="p1" class="text-material">Material do produto: </j>
+                    </div>
+                </div>
+                <div class="maquina-ferramenta">
+                    <div class="maquina">
+                        <div class="linha5">
+                            <p class="p2">EQUIPAMENTO</p>
+                        </div>
+                        <div class="conteudo-maquina">
+                            <p class="p3">Fresadora universal e aparelho divisor</p>
+                        </div>
+                    </div>
+                    <div class="ferramenta">
+                        <div class="linha5">
+                            <p class="p2">FERRAMENTAL</p>
+                        </div>
+                        <div class="conteudo-ferramenta">
+                            <p class="p3" id="fresa">Fresa módulo | número 5 | aço rápido | 12 arrestas cortantes|</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="draw-area">
+                    <div class="linha6">
+                        <p class="p4">REPRESENTAÇÃO GRÁFICA</p>
+                    </div>
+                    <img src="/JavaScript/WebsiteTestes/imagens/dentes.png" class="desenho5" alt="">
+                </div>
+                <aside class="descriçao-parametros">
+                    <div class="descrição">
+                        <div class="linha7">
+                            <p class="p5">Descrição da Operação</p>
+                        </div>
+                        <div class="conteudo-descrição">
+                            <p class="p6" id="text-operação">
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="parametros">
+                        <div class="linha7">
+                            <p class="p5">Parâmetros de processo</p>
+                        </div>
+                        <div class="conteudo-parametros" id="text-parametros">
+                            <p class="p6"></p>
+                            <p class="p6"></p> 
+                            <p class="p6"></p>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </section>
+    </section>
+</body>
+<script src="ECDR.js"></script>
+</html>

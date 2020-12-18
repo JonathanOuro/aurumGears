@@ -1,0 +1,395 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: Montserrat;
+    width: 1345px;
+    text-decoration: none;
+}
+
+.menu-header{
+    width: 1345px;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    /*left: 0px;
+    top: 0px;*/
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+nav{
+    position: absolute;
+    width: 300px;
+    height: 589px;
+    left: -347px;
+    top: 50px;
+    background: #000000;
+    transition: all .5s;
+    z-index: 1;
+}
+
+#link-sidebar{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    display: block;
+    align-items: center;
+    color: #f5f5f5;
+    height: 70px;
+    padding: 10px 10px;
+}
+
+
+b{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 27px;
+    display: block;
+    align-items: center;
+    color: #FFFEFE;
+    background: #BD3D3D;
+    padding: 10px 5px;
+}
+#link-sidebar:hover{
+    background-color: rgb(247, 144, 130);
+    color: rgb(0, 0, 0);
+}
+
+
+.label1{
+    position: absolute;
+    width: 53px;
+    height: 40px;
+    left: 10px;
+    top: 0px;
+}
+
+input#check[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(347px);
+}
+
+
+#retangulo{
+    height: 50px;
+    background-color: rgb(247, 144, 130);
+    opacity: 0.2;
+    width: 1345px;
+}
+
+#conteudo{
+    position: absolute;
+    width: 1345px;
+    height: 1700px;
+    top: 50px;
+}
+
+#secao1{
+    height: 500px;
+    width: 1345px;
+}
+#link-logo{
+    position: absolute;
+    width: 210px;
+    height: 41px;
+    left: 74px;
+    top: 7px;   
+}
+
+#logo1{
+    position: absolute;
+    width: 210px;
+    height: 41px;
+    top: 0px;
+    left: 0px;
+   
+}
+
+
+#txt{
+    font-family: Varta;
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 500px;
+    height: 162px;
+    left: 35px;
+    top: 170px;
+    align-items: center;
+    display: flex;
+}
+.logo2{
+    position: absolute;
+    width: 340px;
+    height: 69px;
+    left: 110px;
+    top: 50px;
+    font-family: IM FELL Double Pica SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 69px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    z-index: 0;
+}
+
+#Exemplo1{
+    position: relative;
+    /*width: 665px;
+    height: 326px;
+    left: 623px;
+    top: 65px;*/
+    width: 693px;
+    height: 422px;
+    left: 623px;
+    top: 70px;
+
+
+}
+
+button{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #DC8C8C;
+    border: none;
+    border-radius: 15px;
+   
+    position: absolute;
+    width: 409.39px;
+    height: 60px;
+    left: 45px;
+    top: 430px;
+}
+
+button:hover {background-color: #ac3535}
+
+/*.button:active {
+  background-color: #ac3535;
+  box-shadow: 0 5px rgb(0, 0, 0);
+  transform: translateY(2px);
+}
+*/
+#secao2{
+    position: absolute;
+    width: 1345px;
+    height: 435px;
+    left: 0px;
+    top: 589px;
+    background: #D9D1D1;
+}
+
+#titulo-secao2{
+    position: relative;
+    top: 14px;
+    left: 0px;
+    font-family: Varta;
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+
+#sub-titulo-gear{
+    position: relative;
+    top: 45px;
+    left: 110px;
+    font-family: Varela;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 27px;
+    color: #000000;
+}
+
+#sub-titulo-sheet{
+    position: relative;
+    top: 30px;
+    left: 950px;
+    font-family: Varela;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 27px;
+    color: #000000;
+}
+
+#print{
+    position: relative;
+    width: 147px;
+    height: 130px;
+    left: 1050px;
+    top: 34px;
+
+}
+
+#gear{
+    position: relative;
+    width: 147px;
+    height: 147px;
+    left: 0px;
+    top: 24px;
+}
+
+#sub-sub1{
+    font-family: Varela;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 35px;
+    width: 348px;
+    height: 114px;
+    color: #000000;
+    position: relative;
+    left: 48px;
+    top: 40px;
+    bottom: 46px;
+}
+
+#sub-sub2{
+    position: relative;
+    width: 376px;
+    height: 72px;
+    bottom: 85px;
+    left: 950px;
+    font-family: Varela;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 35px;
+    color: #000000;
+
+}
+
+#botão2{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+}
+
+#botão1{
+    top: 15px;
+    right: 20px;
+    width: 50px;
+    height: 60px;
+}
+
+#link-modal{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-family: IM FELL Double Pica SC;
+}
+
+#link-modal:hover{
+    background-color:rgb(247, 144, 130);
+    color: white;
+}
+
+#secao3{
+    position: absolute;
+    width: 1345px;
+    height: 500px;
+    top: 1024px;
+    background: #ffffff;
+    z-index: 5;
+}
+
+#exemplo-2{
+    position: relative;
+    width: 600px;
+    height: 407.08px;
+    top: 50px;
+    left: 40px;
+}
+
+#titulo-secao3{
+    font-family: Varta;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    align-items: center;
+    width: 786px;
+    color: #000000;
+    position: relative;
+    left: 100px;
+    top: -370px;
+    float: right;
+}
+
+#txt-j{
+    float: right;
+    width: 640px;
+    position: relative;
+    top: -350px;
+    left: -45px;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+#botão3{
+    position: relative;
+    left: 200px;
+    top: 220px;
+}
+
+.footer{
+    position: relative;
+    top: 1000px;
+    height: 200px;
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pfoot{
+    margin: 0;
+
+}
+
+.teste1{
+    position: relative;
+    top: 65px;
+    left: 20px;
+}
+
+.teste2{
+    position: relative;
+    top: -60px;
+    left: -10px;
+    float: right;
+}
