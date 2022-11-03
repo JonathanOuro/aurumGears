@@ -5,3 +5,9 @@ manufacturing process sheets of turning and milling. For the development of the 
 Cascading Style Sheets (CSS) language. Based on the data of the gear's project, the website size calculate the gear and show to the user all the geometric features, and afterwards 
 makes manufacturing process sheets containing parameters and the description of each process to get manufactured the gear that had been sized.
 
+INSTRUÇÕES:
+— Clique em "CODE"
+— Clique em "Download ZIP"
+— Descompacte a pasta "aurumGears-main.zip"
+— Entre na pasta descompactada
+— Abrir index.html com seu navegador
